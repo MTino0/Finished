@@ -30,7 +30,7 @@ class Player(pygame.sprite.Sprite):
 		self.on_right = False
 
 	def import_character_assets(self):
-		character_path = 'Mario-School-main/SMBv5/Graphics/character/dust_particles/'
+		character_path = 'Finished-main/Mario-School-main/SMBv5/Graphics/character/dust_particles/'
 		self.animations = {'idle':[],'run':[],'jump':[],'fall':[]}
 
 		for animation in self.animations.keys():
@@ -38,7 +38,7 @@ class Player(pygame.sprite.Sprite):
 			self.animations[animation] = import_folder(full_path)
 
 	def import_dust_run_particles(self):
-		self.dust_run_particles = import_folder('Mario-School-main/SMBv5/Graphics/character/dust_particles/run')
+		self.dust_run_particles = import_folder('Finished-main/Mario-School-main/SMBv5/Graphics/character/dust_particles/run')
 
 	def animate(self):
 		animation = self.animations[self.status]
@@ -95,7 +95,7 @@ class Player(pygame.sprite.Sprite):
 		else:
 			self.direction.x = 0
 
-		if keys[pygame.K_SPACE] and self.on_ground:
+		if keys[pygame.K_UP] and self.on_ground:
 			self.jump()
 
 	def get_status(self):

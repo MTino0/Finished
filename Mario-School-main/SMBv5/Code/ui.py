@@ -7,7 +7,7 @@ class UI:
 		self.display_surface = surface 
   
 		#coins
-		self.coin = pygame.image.load('Mario-School-main/SMBv5/Graphics/coin/coin.png')
+		self.coin = pygame.image.load('Finished-main/Mario-School-main/SMBv5/Graphics/coin/coin.png')
 		self.coin_rect = self.coin.get_rect(topleft = (1000,700))
 	
 	def show_health(self,current,full):

@@ -69,42 +69,42 @@ class Level:
                     y = row_index * tile_size
                     
                     if type == 'terrain':
-                        terrain_tile_list = import_cut_graphics('Mario-School-main/SMBv5/Graphics/terrain/terrain_tiles.png')
+                        terrain_tile_list = import_cut_graphics('Finished-main/Mario-School-main/SMBv5/Graphics/terrain/terrain_tiles.png')
                         tile_surface = terrain_tile_list[int(val)]
                         sprite = StaticTile(tile_size,x,y,tile_surface)
                         
                     if type == 'blocks':
-                        question_block_tile_list = import_cut_graphics('Mario-School-main/SMBv5/Graphics/terrain/terrain_tiles.png')
+                        question_block_tile_list = import_cut_graphics('Finished-main/Mario-School-main/SMBv5/Graphics/terrain/terrain_tiles.png')
                         tile_surface = question_block_tile_list[int(val)]
                         sprite = StaticTile(tile_size, x, y, tile_surface)
                         
                     if type == 'house':
-                        house_tile_list = import_cut_graphics('Mario-School-main/SMBv5/Graphics/house/House.png')
+                        house_tile_list = import_cut_graphics('Finished-main/Mario-School-main/SMBv5/Graphics/house/House.png')
                         tile_surface = house_tile_list[int(val)]
                         sprite = StaticTile(tile_size,x,y,tile_surface)
                         
                     if type == 'background':
-                        background_tile_list = import_cut_graphics('Mario-School-main/SMBv5/Graphics/background/background.png')
+                        background_tile_list = import_cut_graphics('Finished-main/Mario-School-main/SMBv5/Graphics/background/background.png')
                         tile_surface = background_tile_list[int(val)]
                         sprite = StaticTile(tile_size,x,y,tile_surface)
                         
                     if type == 'flag':
-                        flag_tile_list = import_cut_graphics('Mario-School-main/SMBv5/Graphics/flag/Flag.png')
+                        flag_tile_list = import_cut_graphics('Finished-main/Mario-School-main/SMBv5/Graphics/flag/Flag.png')
                         tile_surface = flag_tile_list[int(val)]
                         sprite = StaticTile(tile_size,x,y,tile_surface)
                         
                     if type == 'flag_pole':
-                        flag_pole_tile_list = import_cut_graphics('Mario-School-main/SMBv5/Graphics/flag/flag.png')
+                        flag_pole_tile_list = import_cut_graphics('Finished-main/Mario-School-main/SMBv5/Graphics/flag/flag.png')
                         tile_surface = flag_pole_tile_list[int(val)]
                         sprite = StaticTile(tile_size,x,y,tile_surface)
                         
                     if type == 'money':
-                        money_tile_list = import_cut_graphics('Mario-School-main/SMBv5/Graphics/coin/coin.png')
+                        money_tile_list = import_cut_graphics('Finished-main/Mario-School-main/SMBv5/Graphics/coin/coin.png')
                         tile_surface = money_tile_list[int(val)]
                         sprite = StaticTile(tile_size,x,y,tile_surface)
                         
                     if type == 'water':
-                        water_tile_list = import_cut_graphics('Mario-School-main/SMBv5/Graphics/water/water.png')
+                        water_tile_list = import_cut_graphics('Finished-main/Mario-School-main/SMBv5/Graphics/water/water.png')
                         tile_surface = water_tile_list[int(val)]
                         sprite = StaticTile(tile_size,x,y,tile_surface)
                         
@@ -127,7 +127,7 @@ class Level:
                     sprite = Player((x,y))
                     self.player.add(sprite)
                 if val == '1':
-                    spawn_surface = pygame.image.load('Mario-School-main/SMBv5/Graphics/player/player.png').convert_alpha()
+                    spawn_surface = pygame.image.load('Finished-main/Mario-School-main/SMBv5/Graphics/player/player.png').convert_alpha()
                     sprite = StaticTile(tile_size,x,y,spawn_surface)
                     self.goal.add(sprite)
                     

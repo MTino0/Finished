@@ -4,7 +4,7 @@ from random import randint
 
 class Enemy(AnimatedTile):
 	def __init__(self,size,x,y):
-		super().__init__(size,x,y,'Mario-School-main/SMBv5/Graphics/enemies')
+		super().__init__(size,x,y,'Finished-main/Mario-School-main/SMBv5/Graphics/enemies')
 		self.rect.y += size - self.image.get_size()[1]
 		self.speed = randint(3,5)
 
